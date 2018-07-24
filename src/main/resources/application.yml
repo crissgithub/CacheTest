@@ -1,0 +1,73 @@
+server:
+    port: 8089
+spring:
+  profiles:
+    active:
+    - test
+---
+
+server:
+    port: 8081
+spring:
+    profiles: dev
+   
+--- 
+
+server:
+  port: 8082
+spring:
+  profiles: prod
+  
+  
+---
+server:
+  port: 8083
+spring:
+  profiles: test
+  datasource:
+    url: jdbc:mysql://localhost:3306/criss
+    username: root
+    password: wang1129
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: 192.168.37.128
+ 
+#mybatis驼峰命名   
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+#mapper包下的日志
+logging:
+  level:
+    com.criss.wang.mapper=: debug
+  
+debug: true
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+person:
+    lastName: zhangan
+    age: 18
+    boss: false
+    birth: 1992/2/2
+    maps: {k1: va, k2: vb}
+    lists:
+      - lisi
+      - wuwang
+    dog:
+      name: 小狗
+      age: 2
+
