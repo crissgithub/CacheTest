@@ -30,7 +30,7 @@ spring:
     password: wang1129
     driver-class-name: com.mysql.jdbc.Driver
   redis:
-    host: 192.168.37.128
+   host: 192.168.37.128
  
 #mybatis驼峰命名   
 mybatis:

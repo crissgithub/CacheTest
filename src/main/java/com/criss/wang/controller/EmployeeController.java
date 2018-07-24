@@ -35,4 +35,9 @@ public class EmployeeController {
 		employeeService.deleteEmp(id);
 		return "success";
 	}
+	
+	@RequestMapping(value = "/test", method = RequestMethod.GET)
+	public String test() {
+		return "kdfjkdfj";
+	}
 }
